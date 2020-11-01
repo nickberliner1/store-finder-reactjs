@@ -167,7 +167,6 @@ i:hover {
 }
 
 .list-group-item {
-	border: 3px solid rgb(15, 15, 15);
 	border-radius: 15px;
 	margin: 5px;
 }
