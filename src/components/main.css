@@ -1,0 +1,191 @@
+/*
+MOBILE STUFF
+*/
+
+@media only screen and (max-width: 500px) {
+
+	.full-place-list {
+		height: 50vh;
+		width: 100vw;
+	}
+
+	.selected-place-container {
+		height: 100vh;
+		width: 100vw;
+	}
+
+	.map-container {
+		height: 50vh;
+		width: 100vw;
+	}
+}
+
+.map-container {
+	height: 100vh;
+	width: 100vw;
+}
+
+/*
+ALL CLASSES FOR MARKERS
+*/
+
+.fa-map-pin {
+	color: rgb(0, 68, 255);
+	animation: blink 2.5s ease-in-out infinite;
+}
+
+#blue-shop {
+	fill: blue;
+}
+
+@keyframes blink {
+  from, to { opacity: 1 }
+  50% { opacity: 0.6 }
+}
+
+.marker {
+	font-size: 20px;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	background-image: url("images/shop.svg");
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+	position: relative;
+	top: -30px;
+	left: -14px;
+}
+
+.targeted-marker {
+	font-size: 20px;
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+	text-align: center;
+	background-image: url("images/shop.svg");
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+	position: relative;
+	top: -30px;
+	left: -14px;
+	z-index: 5;
+}
+
+
+
+.marker:hover {
+	background-image: url("images/shop.svg");
+	z-index: 5;
+	
+}
+
+
+.hvr-grow {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: 0.1s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	color: red;
+}
+
+/*
+ALL CLASSES FOR LISTING THE PLACES
+*/
+img {
+	border-radius: 5px;
+}
+
+p {
+	padding: 5px;
+}
+
+#shops-list {
+	border-radius: 15px;
+}
+
+.drag-handle {
+	padding-right: 15px;
+	padding-top: 10px;
+	float: right;
+}
+
+.heading {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.place-list-container {
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	justify-content: flex-end;
+	z-index: 5;
+	max-width: 500px;
+	width: 100vw;
+	min-width: 20vw;
+	max-width: 30vw;
+	min-height: 50vh;
+	max-height: 80vh;
+	overflow: scroll;
+	background-color: rgb(226, 226, 226);
+	border: 3px solid rgb(151, 151, 151);
+	border-radius: 20px;
+}
+
+i:hover {
+	cursor: pointer;
+}
+
+.place-list-heading {
+	padding: 5px;
+	border-radius: 15px;
+	position: -webkit-sticky;
+	margin: 15px;
+}
+
+
+.list-group {
+	margin: 15px;
+	max-height: 100vh;
+	margin-bottom: 10px;
+	-webkit-overflow-scrolling: touch;
+	border-radius: 15px;
+
+}
+
+.list-group-item {
+	border: 3px solid rgb(15, 15, 15);
+	border-radius: 15px;
+	margin: 5px;
+}
+
+.selected-place {
+	position: fixed;
+	top: 2vh;
+	right: 78vw;
+	justify-content: flex-end;
+	z-index: 5;
+	
+	width: 100vw;
+	min-width: 20vw;
+	max-width: 20vw;
+	min-height: 40vh;
+	max-height: 50vh;
+	overflow: scroll;
+	background-color: rgba(255, 255, 255, 0.959);
+	border: 3px solid rgb(151, 151, 151);
+	border-radius: 20px;
+}
