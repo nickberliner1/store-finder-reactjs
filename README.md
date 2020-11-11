@@ -28,3 +28,5 @@ This app was built with ReactJS and is meant to find your location and display a
         * After adding your place, it will show up on the map, and can be filtered as well depending on its rating.
         * Again, it won't actually be saved (you don't actually own a restaurant on the corner of main street now), after refreshing the page it will disappear.
     * Just like the "Selected Place" view, the list of places is also draggable.
+
+- Dark mode still in development -
