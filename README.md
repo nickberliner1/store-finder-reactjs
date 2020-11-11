@@ -29,4 +29,4 @@ This app was built with ReactJS and is meant to find your location and display a
         * Again, it won't actually be saved (you don't actually own a restaurant on the corner of main street now), after refreshing the page it will disappear.
     * Just like the "Selected Place" view, the list of places is also draggable.
 
-- Dark mode still in development -
+:crescent_moon: Dark mode still in development :crescent_moon:
